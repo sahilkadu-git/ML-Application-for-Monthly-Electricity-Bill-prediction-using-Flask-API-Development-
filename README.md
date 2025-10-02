@@ -1,4 +1,4 @@
-## ⚡️Household Energy Bill Predictor API (Mixed-Feature Regression)
+## ⚡️Household Electricity Bill Predictor API (Mixed-Feature Regression)
 
 This project implements a robust machine learning API built with Flask and Scikit-learn that predicts a household's monthly energy bill (amount_paid) based on a mix of continuous and binary features. It serves as a practical demonstration of deploying a Linear Regression model for a real-world financial forecasting task.
 
