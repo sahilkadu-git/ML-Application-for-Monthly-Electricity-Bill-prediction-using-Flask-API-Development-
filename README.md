@@ -1,0 +1,2 @@
+# ML-Application-for-Monthly-Electricity-Bill-prediction-using-Flask-API-Development-
+This Flask API deploys a Linear Regression model to predict household monthly electricity bills . It handles mixed-feature data (numerical inputs like area, and binary inputs like AC presence) to provide accurate financial forecasting. The service offers endpoints for training, testing, and making predictions with robust error handling.
