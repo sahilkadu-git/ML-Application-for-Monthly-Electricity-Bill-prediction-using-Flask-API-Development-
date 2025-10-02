@@ -40,9 +40,8 @@ def train():
     r2 = r2_score(y, y_pred)
 
     return jsonify({
-        "message": "Model trained successfully for Monthly Electricity Bill prediction",
-        "train_mse": mse,
-        "train_r2": r2
+        "status": "Ok",
+       
     })
 
 @app.route("/test", methods=["POST"])
@@ -86,10 +85,11 @@ def predict():
     if not data or "features" not in data:
         return jsonify({"error": "No features provided"}), 400
 
-    features = np.array([data["features"]])  # must be 2D
+    features = np.array([data["features"]])  
     prediction = model.predict(features)[0]
 
     return jsonify({"predicted_Monthly_Electricity_Bill": float(prediction)})
 
 if __name__ == "__main__":
     app.run(debug=True)
+
